@@ -35,6 +35,9 @@ export const profile = {
     phone: "095-789-2828",
     lineId: "beer10487",
     facebook: "Sakkarin Beer",
+    // ลิงก์ Facebook — รอ URL โปรไฟล์จริง (ตอนนี้ใช้ลิงก์ค้นหาชื่อไว้ก่อน)
+    facebook_url: "https://www.facebook.com/search/top?q=Sakkarin%20Beer",
+    instagram: "sakkarin_beer.23",
     github: "https://github.com/Sakka11",
   },
 };
@@ -44,17 +47,17 @@ export const education = [
   {
     level: "ปริญญาตรี (กำลังศึกษา)",
     place: "มหาวิทยาลัยเอเชียอาคเนย์",
-    detail: "สาขาด้านเทคโนโลยีดิจิทัล และ นวัตกรรม DTI",
+    detail: "สาขาเทคโนโลยีดิจิทัล และ นวัตกรรม (DTI)",
   },
   {
     level: "ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)",
     place: "วิทยาลัยเทคโนโลยีฐานเทคโนโลยี",
-    detail: "สายเทคนิค คอมพิวเตอร์",
+    detail: "สาขาเทคนิค คอมพิวเตอร์",
   },
   {
     level: "ประกาศนียบัตรวิชาชีพ (ปวช.)",
     place: "วิทยาลัยเทคโนโลยีฐานเทคโนโลยี",
-    detail: "สายเทคนิค คอมพิวเตอร์",
+    detail: "สาขาอิเล็กทรอนิกส์ และ คอมพิวเตอร์",
   },
   {
     level: "มัธยมศึกษาตอนต้น",

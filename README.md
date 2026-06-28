@@ -40,7 +40,7 @@
 | Skills | `/me/skills` | ทักษะแบ่งหมวด Frontend / Backend / Database / Tools (มี progress bar) |
 | Projects | `/me/projects` | ผลงานจริงจาก GitHub พร้อมรูป เทคโนโลยี บทบาท ปีที่พัฒนา และลิงก์ไป repo |
 | Gallery | `/me/gallery` | ภาพบรรยากาศการเขียนโปรแกรม 9 ภาพ (คลิกดูรูปเต็มจอได้) |
-| Contact | `/contact` | Email, เบอร์โทรศัพท์, Line ID, Facebook, GitHub และปุ่ม Download Resume (CV จริง) |
+| Contact | `/contact` | Email, เบอร์โทรศัพท์, Line ID, Facebook, Instagram, GitHub และปุ่ม Download Resume (CV จริง) |
 
 ---
 

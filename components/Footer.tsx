@@ -9,7 +9,9 @@ import {
   FacebookIcon,
   LineIcon,
   PhoneIcon,
+  InstagramIcon,
 } from "@/components/Icons";
+import PhoneLink from "@/components/PhoneLink";
 import nameImg from "@/assets/images/name.png";
 
 export default function Footer() {
@@ -28,8 +30,9 @@ export default function Footer() {
     {
       label: "โทร",
       value: profile.contact.phone,
-      href: `tel:${profile.contact.phone.replace(/-/g, "")}`,
+      href: "#",
       icon: <PhoneIcon className="h-4 w-4" />,
+      isPhone: true,
     },
     {
       label: "Line",
@@ -40,8 +43,14 @@ export default function Footer() {
     {
       label: "Facebook",
       value: profile.contact.facebook,
-      href: "https://www.facebook.com/",
+      href: profile.contact.facebook_url,
       icon: <FacebookIcon className="h-4 w-4" />,
+    },
+    {
+      label: "Instagram",
+      value: `@${profile.contact.instagram}`,
+      href: `https://www.instagram.com/${profile.contact.instagram}`,
+      icon: <InstagramIcon className="h-4 w-4" />,
     },
     {
       label: "GitHub",
@@ -88,27 +97,40 @@ export default function Footer() {
 
             {/* เมนู dropdown */}
             <div className="invisible absolute bottom-full right-0 z-10 mb-2 w-56 translate-y-1 rounded-2xl border border-white/10 bg-surface p-2 text-left opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
-              {channels.map((c) => (
-                <a
-                  key={c.label}
-                  href={c.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-white/5"
-                >
-                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-white/5 text-accent">
-                    {c.icon}
-                  </span>
-                  <span className="min-w-0">
-                    <span className="block text-xs font-semibold text-foreground">
-                      {c.label}
+              {channels.map((c) => {
+                const inner = (
+                  <>
+                    <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-white/5 text-accent">
+                      {c.icon}
                     </span>
-                    <span className="block truncate text-xs text-muted">
-                      {c.value}
+                    <span className="min-w-0">
+                      <span className="block text-xs font-semibold text-foreground">
+                        {c.label}
+                      </span>
+                      <span className="block truncate text-xs text-muted">
+                        {c.value}
+                      </span>
                     </span>
-                  </span>
-                </a>
-              ))}
+                  </>
+                );
+                const itemClass =
+                  "flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-white/5";
+                return c.isPhone ? (
+                  <PhoneLink key={c.label} className={itemClass}>
+                    {inner}
+                  </PhoneLink>
+                ) : (
+                  <a
+                    key={c.label}
+                    href={c.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={itemClass}
+                  >
+                    {inner}
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>

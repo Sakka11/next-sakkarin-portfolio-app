@@ -8,11 +8,14 @@ import { gallery } from "@/data/gallery";
 import SectionTitle from "@/components/SectionTitle";
 import SkillCard from "@/components/SkillCard";
 import ProjectCard from "@/components/ProjectCard";
+import PhoneLink from "@/components/PhoneLink";
 import {
   GitHubIcon,
   EmailIcon,
   FacebookIcon,
   LineIcon,
+  PhoneIcon,
+  InstagramIcon,
   ReactAtomIcon,
   LogoMark,
 } from "@/components/Icons";
@@ -29,14 +32,25 @@ const socials = [
     icon: <EmailIcon className="h-5 w-5" />,
   },
   {
+    href: "#",
+    label: "โทร",
+    icon: <PhoneIcon className="h-5 w-5" />,
+    isPhone: true,
+  },
+  {
     href: `https://line.me/ti/p/~${profile.contact.lineId}`,
     label: "Line",
     icon: <LineIcon className="h-5 w-5" />,
   },
   {
-    href: "https://www.facebook.com/",
+    href: profile.contact.facebook_url,
     label: "Facebook",
     icon: <FacebookIcon className="h-5 w-5" />,
+  },
+  {
+    href: `https://www.instagram.com/${profile.contact.instagram}`,
+    label: "Instagram",
+    icon: <InstagramIcon className="h-5 w-5" />,
   },
 ];
 
@@ -96,18 +110,26 @@ export default function Home() {
               </a>
 
               <div className="flex items-center gap-2.5">
-                {socials.map((s) => (
-                  <a
-                    key={s.label}
-                    href={s.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={s.label}
-                    className="grid h-10 w-10 place-items-center rounded-full border border-white/15 text-muted transition-all hover:-translate-y-0.5 hover:border-accent/60 hover:text-accent"
-                  >
-                    {s.icon}
-                  </a>
-                ))}
+                {socials.map((s) => {
+                  const iconClass =
+                    "grid h-10 w-10 place-items-center rounded-full border border-white/15 text-muted transition-all hover:-translate-y-0.5 hover:border-accent/60 hover:text-accent";
+                  return s.isPhone ? (
+                    <PhoneLink key={s.label} ariaLabel={s.label} className={iconClass}>
+                      {s.icon}
+                    </PhoneLink>
+                  ) : (
+                    <a
+                      key={s.label}
+                      href={s.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={s.label}
+                      className={iconClass}
+                    >
+                      {s.icon}
+                    </a>
+                  );
+                })}
               </div>
             </div>
           </div>
