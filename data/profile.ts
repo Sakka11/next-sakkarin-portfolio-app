@@ -32,6 +32,7 @@ export const profile = {
   // ข้อมูลติดต่อจริง
   contact: {
     email: "sakkarin.opa@gmail.com",
+    phone: "095-789-2828",
     lineId: "beer10487",
     facebook: "Sakkarin Beer",
     github: "https://github.com/Sakka11",

@@ -8,6 +8,7 @@ import {
   EmailIcon,
   FacebookIcon,
   LineIcon,
+  PhoneIcon,
 } from "@/components/Icons";
 import nameImg from "@/assets/images/name.png";
 
@@ -23,6 +24,12 @@ export default function Footer() {
       value: profile.contact.email,
       href: gmail,
       icon: <EmailIcon className="h-4 w-4" />,
+    },
+    {
+      label: "โทร",
+      value: profile.contact.phone,
+      href: `tel:${profile.contact.phone.replace(/-/g, "")}`,
+      icon: <PhoneIcon className="h-4 w-4" />,
     },
     {
       label: "Line",

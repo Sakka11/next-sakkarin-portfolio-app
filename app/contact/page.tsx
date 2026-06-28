@@ -7,11 +7,12 @@ import {
   EmailIcon,
   FacebookIcon,
   LineIcon,
+  PhoneIcon,
 } from "@/components/Icons";
 
 export const metadata: Metadata = {
   title: "Contact | Sakkarin Opasri",
-  description: "ช่องทางการติดต่อ Email, Line, Facebook, GitHub และดาวน์โหลด Resume",
+  description: "ช่องทางการติดต่อ Email, เบอร์โทร, Line, Facebook, GitHub และดาวน์โหลด Resume",
 };
 
 const channels = [
@@ -20,6 +21,12 @@ const channels = [
     label: "Email",
     value: profile.contact.email,
     href: `https://mail.google.com/mail/?view=cm&fs=1&to=${profile.contact.email}`,
+  },
+  {
+    icon: <PhoneIcon className="h-6 w-6" />,
+    label: "เบอร์โทรศัพท์",
+    value: profile.contact.phone,
+    href: `tel:${profile.contact.phone.replace(/-/g, "")}`,
   },
   {
     icon: <LineIcon className="h-6 w-6" />,
@@ -55,7 +62,7 @@ export default function ContactPage() {
           <a
             key={c.label}
             href={c.href}
-            target={c.href.startsWith("mailto") ? undefined : "_blank"}
+            target={/^(mailto|tel):/.test(c.href) ? undefined : "_blank"}
             rel="noopener noreferrer"
             className="flex items-center gap-4 rounded-2xl border border-white/10 bg-surface/60 p-5 transition-colors hover:border-accent/50"
           >

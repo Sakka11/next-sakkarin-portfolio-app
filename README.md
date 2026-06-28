@@ -40,7 +40,7 @@
 | Skills | `/me/skills` | ทักษะแบ่งหมวด Frontend / Backend / Database / Tools (มี progress bar) |
 | Projects | `/me/projects` | ผลงานจริงจาก GitHub พร้อมรูป เทคโนโลยี บทบาท ปีที่พัฒนา และลิงก์ไป repo |
 | Gallery | `/me/gallery` | ภาพบรรยากาศการเขียนโปรแกรม 9 ภาพ (คลิกดูรูปเต็มจอได้) |
-| Contact | `/contact` | Email, Line ID, Facebook, GitHub และปุ่ม Download Resume (CV จริง) |
+| Contact | `/contact` | Email, เบอร์โทรศัพท์, Line ID, Facebook, GitHub และปุ่ม Download Resume (CV จริง) |
 
 ---
 
@@ -118,6 +118,8 @@ next-sakkarin-portfolio-app/
 
 ## 👤 ผู้พัฒนา
 
-**ศักรินทร์ โอภาษี (Sakkarin Opasri)**
-ตำแหน่งที่สมัคร: Full Stack Developer
-📧 sakkarin.opa@gmail.com · 🐙 [github.com/Sakka11](https://github.com/Sakka11)
+**ศักรินทร์ โอภาษี (Sakkarin Opasri)** — Full Stack Developer
+
+[![Email](https://img.shields.io/badge/Email-sakkarin.opa@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:sakkarin.opa@gmail.com)
+[![Phone](https://img.shields.io/badge/📱_Phone-095--789--2828-25D366?style=flat-square)](tel:0957892828)
+[![GitHub](https://img.shields.io/badge/GitHub-Sakka11-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Sakka11)
