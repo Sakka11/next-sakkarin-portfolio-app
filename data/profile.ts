@@ -35,8 +35,8 @@ export const profile = {
     phone: "095-789-2828",
     lineId: "beer10487",
     facebook: "Sakkarin Beer",
-    // ลิงก์ Facebook — รอ URL โปรไฟล์จริง (ตอนนี้ใช้ลิงก์ค้นหาชื่อไว้ก่อน)
-    facebook_url: "https://www.facebook.com/search/top?q=Sakkarin%20Beer",
+    // โปรไฟล์ล็อกอยู่ → ลิงก์ไปหน้า Facebook (เปิดได้เสมอ) แล้วค้นหาชื่อ "Sakkarin Beer" เอง
+    facebook_url: "https://www.facebook.com/",
     instagram: "sakkarin_beer.23",
     github: "https://github.com/Sakka11",
   },
