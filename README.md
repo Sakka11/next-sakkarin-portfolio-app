@@ -116,28 +116,6 @@ next-sakkarin-portfolio-app/
 
 ---
 
-## 🚀 วิธีรันโปรเจกต์
-
-```bash
-# ติดตั้ง dependencies
-npm install
-
-# รัน development server (พอร์ต 8342)
-npm run dev
-```
-
-เปิดเบราว์เซอร์ที่ [http://localhost:8342](http://localhost:8342)
-
-```bash
-# build สำหรับ production
-npm run build
-
-# รัน production (พอร์ต 8342)
-npm start
-```
-
----
-
 ## 👤 ผู้พัฒนา
 
 **ศักรินทร์ โอภาษี (Sakkarin Opasri)**
