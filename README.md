@@ -83,7 +83,7 @@
 
 ---
 
-## ✅ ข้อกำหนดด้านเทคนิคที่ทำครบ
+## ✅ ข้อกำหนดด้านเทคนิค
 
 - **Layout & Shared Components** — มี Component กลางที่นำกลับมาใช้ซ้ำหลายหน้า:
   `NavBar`, `Footer`, `SectionTitle`, `SkillCard`, `ProjectCard`, `Icons`, `Lightbox`, `GalleryGrid`
