@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&family=Kanit:wght@500;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  @page { size: A4; margin: 0; }
+  html, body { font-family: 'Sarabun', sans-serif; color: #1f2433; }
+  .page { width: 210mm; height: 297mm; display: flex; background: #fff; overflow: hidden; }
+  /* ===== Sidebar ===== */
+  .side { width: 70mm; background: #161433; color: #e9eaf6; padding: 8mm 7.5mm; }
+  .photo {
+    width: 34mm; height: 34mm; border-radius: 50%; object-fit: cover;
+    border: 3px solid #818cf8; margin: 0 auto 3.5mm; display: block;
+  }
+  .side h1 { font-family: 'Kanit'; font-size: 16pt; text-align: center; line-height: 1.1; }
+  .side .en { text-align: center; color: #aab0d6; font-size: 10pt; margin-top: 0.5mm; }
+  .side .rolewrap { text-align: center; margin-top: 3mm; }
+  .side .role {
+    font-size: 9pt; font-weight: 600; color: #161433;
+    background: linear-gradient(90deg,#818cf8,#c084fc);
+    padding: 1.5mm 4mm; border-radius: 20px; display: inline-block; width: 100%;
+  }
+  .side h2 {
+    font-family: 'Kanit'; font-size: 10.5pt; color: #c4b5fd; margin: 5mm 0 2mm;
+    border-bottom: 1px solid #3a386a; padding-bottom: 1mm; letter-spacing: .3px;
+  }
+  .side .item { font-size: 8.6pt; line-height: 1.32; margin-bottom: 1.6mm; }
+  .side .item b { color: #fff; font-weight: 600; }
+  .side .muted { color: #aab0d6; }
+  .chip {
+    display: inline-block; background: #2a2752; color: #d8dbf5; font-size: 7.6pt;
+    padding: 0.6mm 2mm; border-radius: 12px; margin: 0 1.2mm 1.2mm 0;
+  }
+  .grp { color: #fff; font-weight: 600; font-size: 8.6pt; margin: 1.8mm 0 0.8mm; }
+  .edu { margin-bottom: 2.2mm; font-size: 8.6pt; line-height: 1.28; }
+  .edu .lv { color: #fff; font-weight: 600; }
+  .edu .pl { color: #c4b5fd; }
+  .edu .dt { color: #9aa0c4; font-size: 7.6pt; }
+  /* ===== Main ===== */
+  .main { flex: 1; padding: 9mm 10mm; }
+  .main h2 {
+    font-family: 'Kanit'; font-size: 13pt; color: #161433; margin: 0 0 2.5mm;
+    display: flex; align-items: center; gap: 2.5mm;
+  }
+  .main h2::before { content: ""; width: 4.5mm; height: 4.5mm; border-radius: 2px;
+    background: linear-gradient(135deg,#818cf8,#c084fc); display: inline-block; }
+  .section { margin-bottom: 5.5mm; }
+  .objective { font-size: 10pt; line-height: 1.55; color: #353b50; text-align: justify; }
+  .exp { position: relative; padding-left: 5.5mm; margin-bottom: 3.5mm; border-left: 2px solid #e3e4ee; }
+  .exp::before { content:""; position:absolute; left:-1.4mm; top:1.5mm; width:2.6mm; height:2.6mm;
+    border-radius:50%; background:#818cf8; }
+  .exp .yr { font-size: 8.6pt; font-weight: 700; color: #6d5dd3; }
+  .exp .co { font-size: 10.5pt; font-weight: 600; color: #1f2433; }
+  .exp .ds { font-size: 9pt; color: #6b7185; }
+  .proj { font-size: 9.6pt; line-height: 1.45; margin-bottom: 2.2mm; padding-left: 4.5mm; position: relative; }
+  .proj::before { content:"▹"; position:absolute; left:0; color:#818cf8; }
+  .proj b { color: #1f2433; }
+  .proj .tech { color: #6d5dd3; font-size: 8.2pt; }
+  .str { font-size: 9.6pt; line-height: 1.55; color: #353b50; }
+</style>
+</head>
+<body>
+<div class="page">
+  <aside class="side">
+    <img class="photo" src="file:///C:/next-project/next-sakkarin-portfolio-app/assets/images/profile.jpg" alt="profile" />
+    <h1>ศักรินทร์ โอภาษี</h1>
+    <div class="en">Sakkarin Opasri (เบียร์)</div>
+    <div class="rolewrap"><span class="role">Full Stack Developer</span></div>
+
+    <h2>ติดต่อ</h2>
+    <div class="item"><b>Email:</b> <span class="muted">sakkarin.opa@gmail.com</span></div>
+    <div class="item"><b>GitHub:</b> <span class="muted">github.com/Sakka11</span></div>
+    <div class="item"><b>Line:</b> <span class="muted">beer10487</span> &nbsp; <b>FB:</b> <span class="muted">Sakkarin Beer</span></div>
+    <div class="item"><b>วันเกิด:</b> <span class="muted">23 กรกฎาคม 1993</span></div>
+    <div class="item"><b>ที่อยู่:</b> <span class="muted">234/229 หมู่บ้านศุภาลัยวิลล์ เพชรเกษม 69 แขวงหนองแขม เขตหนองแขม กรุงเทพมหานคร</span></div>
+
+    <h2>ทักษะ (Skills)</h2>
+    <div class="grp">Frontend</div>
+    <span class="chip">HTML</span><span class="chip">CSS / Tailwind</span><span class="chip">JavaScript</span><span class="chip">React</span><span class="chip">Next.js</span>
+    <div class="grp">Backend</div>
+    <span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">PHP</span>
+    <div class="grp">Mobile</div>
+    <span class="chip">React Native</span><span class="chip">Expo</span><span class="chip">Flutter</span><span class="chip">Dart</span>
+    <div class="grp">Database</div>
+    <span class="chip">MySQL</span><span class="chip">PostgreSQL</span><span class="chip">Supabase</span>
+    <div class="grp">Tools</div>
+    <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">VS Code</span><span class="chip">Docker</span>
+
+    <h2>การศึกษา</h2>
+    <div class="edu"><div class="lv">ปริญญาตรี (กำลังศึกษา)</div><div class="pl">มหาวิทยาลัยเอเชียอาคเนย์</div><div class="dt">สาขาเทคโนโลยีดิจิทัลและนวัตกรรม (DTI)</div></div>
+    <div class="edu"><div class="lv">ปวส. — วิทยาลัยเทคโนโลยีฐานเทคโนโลยี</div><div class="dt">สายเทคนิคคอมพิวเตอร์</div></div>
+    <div class="edu"><div class="lv">ปวช. — วิทยาลัยเทคโนโลยีฐานเทคโนโลยี</div><div class="dt">สายเทคนิคคอมพิวเตอร์</div></div>
+    <div class="edu"><div class="lv">มัธยมศึกษาตอนต้น</div><div class="pl">โรงเรียนวังไกลกังวล</div></div>
+  </aside>
+
+  <main class="main">
+    <div class="section">
+      <h2>Career Objective</h2>
+      <p class="objective">ตั้งเป้าที่จะเป็น Full Stack Developer ที่สามารถเปลี่ยนไอเดียให้กลายเป็น Web Application ที่มีประสิทธิภาพ ใช้งานง่าย และตอบโจทย์ผู้ใช้งาน พร้อมพัฒนาตนเองอย่างต่อเนื่องและเรียนรู้เทคโนโลยีใหม่เพื่อสร้างนวัตกรรมให้กับองค์กร</p>
+    </div>
+
+    <div class="section">
+      <h2>ประสบการณ์การทำงาน</h2>
+      <div class="exp"><div class="yr">2024 – 2026 (ปัจจุบัน)</div><div class="co">Wire &amp; Wireless</div><div class="ds">บริษัทในเครือ CP</div></div>
+      <div class="exp"><div class="yr">2018 – 2024</div><div class="co">True Internet Corporation</div></div>
+      <div class="exp"><div class="yr">2016 – 2018</div><div class="co">Fujiko &amp; Kenpro</div><div class="ds">ระบบกล้องวงจรปิด (CCTV)</div></div>
+    </div>
+
+    <div class="section">
+      <h2>ผลงานเด่น (Projects)</h2>
+      <div class="proj"><b>SAU Product Sale</b> — เว็บไซต์ร้านขายสินค้าไอทีออนไลน์ <span class="tech">(Next.js, React, TypeScript)</span></div>
+      <div class="proj"><b>American Share</b> — เว็บแอปคำนวณหาร/แชร์ค่าใช้จ่าย <span class="tech">(Next.js, TypeScript)</span></div>
+      <div class="proj"><b>Smart Auto Loan</b> — แอปคำนวณค่างวด/สินเชื่อรถยนต์ <span class="tech">(React Native, Expo)</span></div>
+      <div class="proj"><b>Money Tracking</b> — แอปบันทึกรายรับ-รายจ่าย <span class="tech">(React Native, Expo)</span></div>
+      <div class="proj"><b>Top BKK Coffee</b> — แอปรวมร้านกาแฟในกรุงเทพฯ <span class="tech">(React Native, Expo)</span></div>
+      <div class="proj"><b>สายด่วนกินเค้ก / Thai Hot Line</b> — แอปสั่งเค้ก และแอปรวมเบอร์สายด่วน <span class="tech">(Flutter, Dart)</span></div>
+    </div>
+
+    <div class="section">
+      <h2>จุดแข็ง (Strengths)</h2>
+      <p class="str">• เรียนรู้เทคโนโลยีใหม่ได้อย่างรวดเร็ว<br/>• มีความคิดเชิงวิเคราะห์และแก้ปัญหาอย่างเป็นระบบ<br/>• ทำงานร่วมกับผู้อื่นและสื่อสารได้ดี<br/>• มีความรับผิดชอบและใส่ใจในรายละเอียดของงาน<br/>• พร้อมพัฒนาทักษะและเรียนรู้สิ่งใหม่อย่างต่อเนื่อง</p>
+    </div>
+  </main>
+</div>
+</body>
+</html>
